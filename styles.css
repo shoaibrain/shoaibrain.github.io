@@ -3,6 +3,10 @@
    whitespace rather than size. Theme follows the operating system. */
 
 :root {
+  /* Declaring this stops Chrome's auto-dark-mode from re-processing the page
+     and shading the body box differently from the canvas behind it. */
+  color-scheme: light dark;
+
   --bg: #ffffff;
   --heading: #101828;
   --prose: #1e2939;
@@ -29,6 +33,7 @@
 html {
   min-width: 360px;
   scrollbar-gutter: stable;
+  background: var(--bg);
 }
 
 body {
@@ -100,9 +105,10 @@ footer {
 
 /* Short viewports: tighten the rhythm so the page still holds one screen. */
 @media (max-height: 720px) {
-  .avatar { margin-top: 1.5rem; }
-  p { margin-top: 1.25rem; }
-  footer { margin-top: 2rem; }
+  main { padding-bottom: 0.5rem; }
+  .avatar { margin-top: 1rem; }
+  p { margin-top: 1rem; }
+  footer { margin-top: 1.5rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
