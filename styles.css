@@ -53,12 +53,20 @@ main {
   main { padding-top: 2rem; }
 }
 
+.avatar {
+  display: block;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin-top: 3rem;
+  object-fit: cover;
+}
+
 h1 {
   color: var(--heading);
   font-size: 1.25rem;
   font-weight: 500;
-  margin: 0;
-  padding-top: 3rem;
+  margin: 1rem 0 0;
   text-wrap: balance;
 }
 
@@ -88,6 +96,13 @@ footer {
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 3rem;
+}
+
+/* Short viewports: tighten the rhythm so the page still holds one screen. */
+@media (max-height: 720px) {
+  .avatar { margin-top: 1.5rem; }
+  p { margin-top: 1.25rem; }
+  footer { margin-top: 2rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
