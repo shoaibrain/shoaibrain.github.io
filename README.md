@@ -1,46 +1,32 @@
 # shoaibrain.github.io
 
-My personal website & developer portfolio, served at
-**<https://shoaibrain.github.io>**.
+My personal site, served at **<https://shoaibrain.github.io>**.
 
-It's a single static page — plain HTML and CSS with a few lines of vanilla
-JavaScript. No build step, no framework, no dependencies to install.
-
-## Structure
+One page, one column, one typeface, no JavaScript, no build step.
 
 | File | Purpose |
 |------|---------|
-| `index.html` | The page itself (Hero · About · Now · Skills · How I work · Contact). |
-| `styles.css` | All styling and the light/dark theme tokens. |
-| `script.js` | Theme toggle (remembers your choice) + footer year. |
+| `index.html` | The page. All of the content lives here. |
+| `styles.css` | ~90 lines. Colors are CSS variables at the top. |
 | `favicon.svg` | The "SR" monogram tab icon. |
-| `404.html` | Styled not-found page. |
-| `.nojekyll` | Tells GitHub Pages to serve the files as-is (no Jekyll build). |
+| `404.html` | Not-found page, same shell. |
+| `.nojekyll` | Serve the files as-is; skip the Jekyll build. |
 
 ## Editing
 
-Just edit `index.html` — the content is plain, well-labelled HTML. To change the
-look, the color and font tokens live at the top of `styles.css` (`:root` for
-light, `[data-theme='dark']` for dark).
+Change the prose in `index.html`. To adjust the look, edit the variables at the
+top of `styles.css` — `:root` for light, the `prefers-color-scheme: dark` block
+for dark. The theme follows the operating system; there is no toggle.
 
-Preview locally by opening `index.html` in a browser, or run a tiny static
-server from this folder:
+Preview by opening `index.html` in a browser, or:
 
 ```bash
 python3 -m http.server 8000   # then visit http://localhost:8000
 ```
 
-## How it publishes
+## Publishing
 
-This repository is named `shoaibrain.github.io`, so GitHub Pages automatically
-publishes it as a **user site** from the default branch (`main`). Pushing to
-`main` updates <https://shoaibrain.github.io> within a minute or two.
-
-If the site isn't live, check **Settings → Pages** and confirm the source is
-**Deploy from a branch → `main` / `(root)`**.
-
-## Ideas for later
-
-- A **Projects** section with cards for individual repos.
-- A **custom domain** (add a `CNAME` file + a DNS record).
-- Links to **LinkedIn / X** or a **résumé PDF**.
+The repository is named `shoaibrain.github.io`, so GitHub Pages publishes it as
+a user site from `main`. Push to `main` and the site updates in a minute or two.
+If it doesn't, check **Settings → Pages** reads *Deploy from a branch →
+`main` / `(root)`*.

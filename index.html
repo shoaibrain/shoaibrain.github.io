@@ -1,249 +1,54 @@
 <!doctype html>
-<html lang="en" id="top">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Shoaib Rain — Software Engineer</title>
-  <meta name="description" content="Shoaib Rain — software engineer in Dallas, TX. Building cloud-native education infrastructure. What I'm working on, my skills, and how I work." />
+  <title>Shoaib Rain</title>
+  <meta name="description" content="I'm an engineer working on education technology. I build EdForge, the system a school actually runs on." />
   <meta name="author" content="Shoaib Rain" />
 
-  <!-- Open Graph / social preview -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Shoaib Rain — Software Engineer" />
-  <meta property="og:description" content="Software engineer in Dallas, TX, building cloud-native education infrastructure." />
+  <meta property="og:title" content="Shoaib Rain" />
+  <meta property="og:description" content="I'm an engineer working on education technology." />
   <meta property="og:url" content="https://shoaibrain.github.io" />
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="canonical" href="https://shoaibrain.github.io" />
 
-  <!-- Fonts: Inter (body), Fraunces (display), JetBrains Mono (code/tags) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
-
-  <!-- Set theme before first paint to avoid a flash -->
-  <script>
-    (function () {
-      try {
-        var saved = localStorage.getItem('theme');
-        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        var theme = saved || (prefersDark ? 'dark' : 'light');
-        document.documentElement.setAttribute('data-theme', theme);
-      } catch (e) {}
-    })();
-  </script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <main>
+    <h1>Shoaib Rain</h1>
 
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="Shoaib Rain — home">
-      <span class="monogram" aria-hidden="true">SR</span>
-      <span class="brand-name">Shoaib Rain</span>
-    </a>
-    <nav class="site-nav" aria-label="Primary">
-      <a href="#about">About</a>
-      <a href="#now">Now</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch theme">
-        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
-        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      </button>
-    </nav>
-  </header>
+    <p>I'm an engineer working on education technology.</p>
 
-  <main id="main">
-    <!-- Hero -->
-    <section class="hero" aria-labelledby="hero-name">
-      <p class="eyebrow">Software Engineer · Dallas, TX</p>
-      <h1 id="hero-name">Shoaib Rain</h1>
-      <p class="lead">
-        I build cloud-native software — right now, the education infrastructure
-        that schools actually run on. I care about clean architecture,
-        pragmatic engineering, and systems that hold up in production.
-      </p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="https://github.com/shoaibrain" target="_blank" rel="noopener">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.2-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.75.81 1.2 1.84 1.2 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
-          GitHub
-        </a>
-        <a class="btn btn-ghost" href="mailto:shoaib.rain1@gmail.com">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
-          Email
-        </a>
-      </div>
-    </section>
+    <p>
+      I build <a href="https://edforge.app/">EdForge</a> — the system a school
+      actually runs on: admissions, attendance, exams, results, and fees. It's
+      live at its first school in Nepal, so it speaks Nepali, keeps time in the
+      Bikram Sambat calendar, and files the reports the national system expects.
+    </p>
 
-    <!-- About -->
-    <section id="about" class="section" aria-labelledby="about-h">
-      <h2 id="about-h" class="section-title">About</h2>
-      <div class="prose">
-        <p>
-          I'm a software engineer based in Dallas, TX. Most of my work lives in
-          the backend and infrastructure of multi-tenant SaaS — designing
-          services, data models, and the AWS around them — with enough
-          frontend to ship a product end to end.
-        </p>
-        <p>
-          I like problems where the domain is genuinely complex and the
-          engineering has to stay simple anyway. I reach for boring, reliable
-          tools, keep abstractions honest, and let tests and types do the
-          guarding so the interesting parts stay easy to change.
-        </p>
-      </div>
-    </section>
+    <p>
+      Most school software is built for schools in the US. I'm interested in the
+      ones it was never built for.
+    </p>
 
-    <!-- Now -->
-    <section id="now" class="section" aria-labelledby="now-h">
-      <h2 id="now-h" class="section-title">Now</h2>
-      <p class="section-intro">What I'm building at the moment.</p>
+    <p>Mostly I work on the backend and the infrastructure underneath.</p>
 
-      <article class="card">
-        <div class="card-head">
-          <h3 class="card-title">EdForge</h3>
-          <a class="card-link" href="https://github.com/shoaibrain/edforge" target="_blank" rel="noopener" aria-label="EdForge on GitHub">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.2-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.75.81 1.2 1.84 1.2 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
-          </a>
-        </div>
-        <p class="card-tagline">A better education information system for schools around the globe.</p>
-        <p class="card-body">
-          EdForge is a multi-tenant education management system — the operating
-          system for a school, covering enrolment, academics, exams, results,
-          and finance, plus the national reporting that ties a school back to
-          its education data standard. It's designed around
-          <em>archetypes</em> of school operations rather than a single
-          country or district, so one codebase can serve very different schools.
-        </p>
-        <p class="card-body">
-          I work across the stack: NestJS microservices on AWS ECS/Fargate, a
-          single-table DynamoDB design per service, Cognito + attribute-based
-          access control for tenant isolation, and an EventBridge-driven event
-          flow — all provisioned with AWS CDK. The tenant-facing frontend is a
-          React micro-frontend built with Module Federation.
-        </p>
-        <ul class="tag-list" aria-label="EdForge technologies">
-          <li>AWS CDK</li>
-          <li>ECS / Fargate</li>
-          <li>NestJS</li>
-          <li>DynamoDB</li>
-          <li>Cognito · ABAC</li>
-          <li>EventBridge</li>
-          <li>React · Module Federation</li>
-        </ul>
-      </article>
+    <p>Dallas, Texas.</p>
 
-      <p class="more-line">
-        More of my work lives on
-        <a href="https://github.com/shoaibrain" target="_blank" rel="noopener">GitHub</a>.
-      </p>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="section" aria-labelledby="skills-h">
-      <h2 id="skills-h" class="section-title">Skills</h2>
-      <p class="section-intro">Tools I reach for most.</p>
-
-      <div class="skills-grid">
-        <div class="skill-group">
-          <h3 class="skill-label">Languages</h3>
-          <ul class="tag-list">
-            <li>TypeScript</li>
-            <li>Python</li>
-            <li>SQL</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h3 class="skill-label">Backend</h3>
-          <ul class="tag-list">
-            <li>Node.js</li>
-            <li>NestJS</li>
-            <li>REST APIs</li>
-            <li>Event-driven microservices</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h3 class="skill-label">Cloud &amp; AWS</h3>
-          <ul class="tag-list">
-            <li>AWS CDK</li>
-            <li>ECS / Fargate</li>
-            <li>Lambda</li>
-            <li>DynamoDB</li>
-            <li>Cognito</li>
-            <li>EventBridge</li>
-            <li>API Gateway</li>
-            <li>S3 / CloudFront</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h3 class="skill-label">Frontend</h3>
-          <ul class="tag-list">
-            <li>React</li>
-            <li>Module Federation</li>
-            <li>TanStack</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h3 class="skill-label">Quality</h3>
-          <ul class="tag-list">
-            <li>Vitest / Jest</li>
-            <li>Playwright</li>
-            <li>MSW</li>
-            <li>CI/CD</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- How I work -->
-    <section id="approach" class="section" aria-labelledby="approach-h">
-      <h2 id="approach-h" class="section-title">How I work</h2>
-      <ul class="principles">
-        <li>
-          <span class="principle-key">Match scope to the problem.</span>
-          Three similar lines beat a premature abstraction; I add structure when
-          the second or third real case earns it.
-        </li>
-        <li>
-          <span class="principle-key">Types and tests as guardrails.</span>
-          Not an afterthought — they're what makes the interesting code safe to
-          change later.
-        </li>
-        <li>
-          <span class="principle-key">Small, reviewable commits.</span>
-          Clear history over clever history; the diff should tell the story.
-        </li>
-        <li>
-          <span class="principle-key">Build for the real constraints.</span>
-          Actual users, actual data, actual failure modes — design for what
-          production will do, not the happy path.
-        </li>
-      </ul>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section" aria-labelledby="contact-h">
-      <h2 id="contact-h" class="section-title">Contact</h2>
-      <p class="section-intro">The best ways to reach me.</p>
-      <ul class="contact-list">
-        <li>
-          <span class="contact-key">Email</span>
-          <a href="mailto:shoaib.rain1@gmail.com">shoaib.rain1@gmail.com</a>
-        </li>
-        <li>
-          <span class="contact-key">GitHub</span>
-          <a href="https://github.com/shoaibrain" target="_blank" rel="noopener">github.com/shoaibrain</a>
-        </li>
-      </ul>
-    </section>
+    <footer>
+      <a href="https://github.com/shoaibrain">github</a>
+      <a href="https://www.linkedin.com/in/shoaibrain/">linkedin</a>
+      <a href="mailto:shoaib.rain1@gmail.com">email</a>
+      <a href="https://edforge.app/">edforge</a>
+    </footer>
   </main>
-
-  <footer class="site-footer">
-    <p>© <span id="year">2026</span> Shoaib Rain · Built with plain HTML &amp; CSS, hosted on GitHub Pages.</p>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
